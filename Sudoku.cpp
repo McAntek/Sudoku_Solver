@@ -584,18 +584,17 @@ int main() {
             /*display(rozx, false);
             cout << endl;
             display(vecx, false);
-            cin >> cint;*/
+            Sleep(500);*/
+            //cin >> cint;
             //solving
             while (true) {
                 for (int i = 0; i < ROW; i++) {
                     for (int j = 0; j < COL; j++) {
                         auto time = high_resolution_clock::now();
                         auto duration = duration_cast<microseconds>(time - start);
-                        if (duration.count() > 1000000) {
+                        if (duration.count() > 11000000) {
                             system("CLS");
                             display(vecx, false);
-                            cout << endl;
-                            display(rozx, false);
                             cout << endl;
                             displaySolver(rozx);
                             cout << "couldn't compleate the puzzle";
@@ -618,11 +617,12 @@ int main() {
                             rozx = deleteDigits(i, j, r, rozx);
 
                             rozx[i][j] = 0;
-                            //system("CLS");
-                            /*cout << endl;
+                            /*system("CLS");
+                            cout << endl;
                             display(vecx, false);
                             cout << endl;
-                            display(rozx, false);*/
+                            displaySolver(rozx);
+                            Sleep(500);*/
                         }
                         else {
                             /*system("CLS");
@@ -636,18 +636,19 @@ int main() {
                         //cin >> cint;
                         //return h;
                         //cout << j;
-                        cout << endl << endl << endl;
+                        //cout << endl << endl << endl;
                         if (h > 0 && h < 99) {
                             //int h = look_for_lonely_x(rozx, i);
                             vecx[i][h % 10] = h / 10;
                             rozx[i][h % 10] = 0;
                             rozx = deleteDigits(i, h % 10, h / 10, rozx);
-                            //display(rozx, false);
-                            //cout << endl;
-                            //display(vecx, false);
+                            /*system("CLS");
+                            display(vecx, false);
+                            cout << endl;
+                            displaySolver(rozx);*/
                             //return 2137;
                             h = 0;
-                            //system("CLS");
+                            //
                         }
                         //cin >> cint;
                         h = look_for_lonely_y(rozx, j);
@@ -656,9 +657,10 @@ int main() {
                             vecx[h % 10][j] = h / 10;
                             rozx[h % 10][j] = 0;
                             rozx = deleteDigits(h % 10, j, h / 10, rozx);
-                            //display(rozx, false);
-                            //cout << endl;
-                            //display(vecx, false);
+                            /*system("CLS");
+                            display(vecx, false);
+                            cout << endl;
+                            displaySolver(rozx);*/
                             //return 2137;
                             h = 0;
                             //system("CLS");
@@ -677,12 +679,13 @@ int main() {
                             vecx[(h % 100) / 10][h % 10] = h / 100;
                             rozx[(h % 100) / 10][h % 10] = 0;
                             rozx = deleteDigits((h % 100) / 10, h % 10, h / 100, rozx);
-                            //display(rozx, false);
-                            //cout << endl;
-                            //display(vecx, false);
+                            /*system("CLS");
+                            display(vecx, false);
+                            cout << endl;
+                            displaySolver(rozx);
                             //return 2137;
                             h = 0;
-                            //system("CLS");
+                            //system("CLS");*/
                         }
                         //cin >> cint;
                         //return 0;
@@ -691,5 +694,4 @@ int main() {
                 }
             }
         }
-
 }

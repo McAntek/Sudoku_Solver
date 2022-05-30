@@ -1,0 +1,15 @@
+﻿  Sudoku.cpp
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(39,27): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(24,9): warning C4101: 't': unreferenced local variable
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(82,23): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(83,27): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(115,23): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(116,27): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(601,50): warning C4305: 'return': truncation from '__int64' to 'int'
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(601,37): warning C4309: 'return': truncation of constant value
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(461,32): warning C4101: 'cint': unreferenced local variable
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(464,19): warning C4101: 'wlas': unreferenced local variable
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(668,29): warning C4101: 'inx': unreferenced local variable
+C:\Projects\Cpp\Sudoku_Solver\Sudoku.cpp(668,34): warning C4101: 'iny': unreferenced local variable
+  Sudoku_Solver.vcxproj -> C:\Projects\Cpp\Sudoku_Solver\Debug\Sudoku_Solver.exe
